@@ -1,0 +1,22 @@
+Python Installation & Create basic CRUD API:
+
+* Install Python3
+* Install Pip3
+* Install Django
+* `pip install pipenv`
+* `pipenv shell` (Create Virtual Environment with Pipfile like Package.json)
+* `pipenv install django djangorestframework django-rest-knox`
+* `django-admin startproject leadmanager`
+* For vscode: Ctrl + Shift + P —> Python Select Interpreter -> Python(Your Project Name)
+* `cd leadmanager && python3 manage.py startapp leads`
+* Open leadmanager/settings.py & insert `leads` & `rest_framework`  in installed apps array
+* Create Model in lead folder
+* `pip3 manage.py make migrations leads`
+* `python3 manage.py migrate`
+* Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
+* Add Serializers
+* Add ViewSet (Creates CRUD Api)
+* Add URL references
+* `python3 manage.py  runserver`
+
+Video: https://www.youtube.com/watch?v=Uyei2iDA4Hs
